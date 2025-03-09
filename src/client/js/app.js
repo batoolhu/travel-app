@@ -18,7 +18,7 @@ function tripCountdown(travelDate) {
 async function getCountryInfo(country) {
   try {
     const response = await fetch(
-      `http://api.geonames.org/searchJSON?q=${country}&maxRows=1&username=tala`
+     ` http://api.geonames.org/searchJSON?q=${country}&maxRows=1&username=batoolhu`
     );
     const result = await response.json();
     const lat = result.geonames[0].lat; // Get the latitude
@@ -32,7 +32,7 @@ async function getCountryInfo(country) {
 
 // Method to fetch weather forecast using the WeatherBit API
 async function getWeatherForecast(lat, lng) {
-  const key = "a75d9b72e8f6450db2a25d17379080ef"; // API key
+  const key = "52309ba94008421cbb413eca97774d22"; // API key
   if (results.countdown <= 7) { // If trip is within 7 days
     try {
       const response = await fetch(
@@ -89,8 +89,8 @@ function showData() {
   // Display the image and results on the page
   image.src = results.image;
   length.innerHTML = `Trip Length : ${results.length} days`;
-  countdown.innerHTML = `Trip Countdown : ${results.countdown} days`;
-  weather.innerHTML = `Weather forecast : ${results.temp} °C`;
+  countdown.innerHTML =`Trip Countdown : ${results.countdown} days`;
+  weather.innerHTML =`Weather forecast : ${results.temp}  °C`;
 }
 
 // Export the functions and variables to be used in other files
