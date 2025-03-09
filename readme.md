@@ -28,16 +28,18 @@ Ensure you have the following installed:
 
 Node.js v22.13.1 (Download from Node.js Official Website)
 2️⃣ Clone the Repository
+Run the following commands in your terminal:
+
 sh
 Copy
 Edit
-git clone https://github.com/batoolhu/travel-app.git  
-cd travel-app  
+git clone https://github.com/batoolhu/travel-app.git
+cd travel-app
 3️⃣ Install Dependencies
 sh
 Copy
 Edit
-npm install  
+npm install
 4️⃣ Configure Environment Variables
 Create a .env file in the root directory and add the following API keys:
 
@@ -45,20 +47,19 @@ env
 Copy
 Edit
 GEONAMES_USERNAME=batoolhu
-WEATHERBIT_API_KEY=52309ba94008421cbb413eca97774d22 
+WEATHERBIT_API_KEY=52309ba94008421cbb413eca97774d22
 PIXABAY_API_KEY=49088082-18c17e4c7db45fff4ab7a0e26
-
 5️⃣ Run the Development Server
 sh
 Copy
 Edit
-npm run build-dev  
-npm start  
+npm run build-dev
+npm start
 6️⃣ Build for Production
 sh
 Copy
 Edit
-npm run build-prod  
+npm run build-prod
 🛠 Usage
 Enter your travel destination and departure date.
 The app fetches real-time weather data and related images.
@@ -68,9 +69,12 @@ Enjoy a seamless travel planning experience!
 Contributions are welcome! If you'd like to improve this project, follow these steps:
 
 Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
+Create a new branch:
+git checkout -b feature-branch
+Commit your changes:
+git commit -m 'Add new feature'
+Push to the branch:
+git push origin feature-branch
 Open a pull request.
 📄 License
 This project is licensed under the MIT License.
